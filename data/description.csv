@@ -1,4 +1,4 @@
-﻿index,page_count,print_type,avg_rating,rating_count,is_ebook
+﻿id,page_count,print_type,avg_rating,rating_count,is_ebook
 9.78E+12,980,BOOK,,,TRUE
 9.78E+12,290,BOOK,,,FALSE
 1292017430,272,BOOK,,,FALSE
