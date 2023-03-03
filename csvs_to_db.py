@@ -15,7 +15,12 @@ def create_database(args):
             dfs.append(pd.read_csv(os.path.join(args.folder, file), encoding=args.encoding))
             file_names.append(file[:-4])
 
-    print(file_names)
+    print(f'\nTable names in {args.name} - ', end='')
+    for file in file_names:
+        print(file)
+        if i != len(file_names)-1:
+            print(', ', end='')
+    print('.')
 
     conn = sqlite3.connect(args.name)
     for i, df in enumerate(dfs):
